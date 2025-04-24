@@ -6,9 +6,7 @@
  * Course: CSC 335 Spring 2025
  */
 
-
 package model.score;
-
 
 public class ChanceCategory extends ScoreCategory {
 	/*

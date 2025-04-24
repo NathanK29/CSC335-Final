@@ -6,14 +6,12 @@
  * Course: CSC 335 Spring 2025
  */
 
-
 package flyweight;
 
 import model.score.*;
 
 import java.util.HashMap;
 import java.util.Map;
-
 
 public class ScoreCategoryStore {
     private static final Map<String, ScoreCategory> categories = new HashMap<>();

@@ -6,9 +6,7 @@
  * Course: CSC 335 Spring 2025
  */
 
-
 package model.score;
-
 
 public class LargeStraightCategory extends ScoreCategory {
 	/*
@@ -30,8 +28,9 @@ public class LargeStraightCategory extends ScoreCategory {
     @Override
     public int calculateScore(int[] diceValues) {
         boolean[] present = new boolean[7];
-        for (int val : diceValues) present[val] = true;
-
+        for (int val : diceValues) {
+            present[val] = true;
+        }
         if ((present[1] && present[2] && present[3] && present[4] && present[5]) ||
             (present[2] && present[3] && present[4] && present[5] && present[6])) {
             return 40;
